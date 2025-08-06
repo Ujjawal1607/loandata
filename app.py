@@ -3,7 +3,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import base64
 from io import BytesIO
 from sklearn.model_selection import train_test_split
@@ -146,3 +146,4 @@ if hasattr(model, 'coef_'):
     ax.barh(importance_df['Feature'], importance_df['Coefficient'])
     ax.set_title("SVM Feature Importance")
     st.pyplot(fig_imp)
+
